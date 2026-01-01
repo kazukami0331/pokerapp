@@ -44,198 +44,6 @@
             font-size: 14px;
         }
 
-        .screen {
-            display: none;
-        }
-
-        .screen.active {
-            display: block;
-        }
-
-        /* プロジェクト一覧画面 */
-        .project-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 24px;
-        }
-
-        .project-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: #e2e8f0;
-        }
-
-        .btn-create {
-            background: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
-            color: white;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 10px;
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .btn-create:active {
-            transform: scale(0.98);
-            opacity: 0.9;
-        }
-
-        .projects-list {
-            display: grid;
-            gap: 16px;
-        }
-
-        .project-card {
-            background: #1e293b;
-            border-radius: 12px;
-            padding: 20px;
-            border: 1px solid #334155;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .project-card:hover {
-            border-color: #06b6d4;
-            background: #1e2a3e;
-        }
-
-        .project-card:active {
-            transform: scale(0.98);
-        }
-
-        .project-card-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 12px;
-        }
-
-        .project-name {
-            font-size: 18px;
-            font-weight: 700;
-            color: #e2e8f0;
-            margin-bottom: 4px;
-        }
-
-        .project-date {
-            font-size: 13px;
-            color: #94a3b8;
-        }
-
-        .project-actions {
-            display: flex;
-            gap: 8px;
-        }
-
-        .btn-icon {
-            width: 32px;
-            height: 32px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s;
-            font-size: 16px;
-        }
-
-        .btn-edit {
-            background: rgba(6, 182, 212, 0.15);
-            color: #06b6d4;
-            border: 1px solid rgba(6, 182, 212, 0.3);
-        }
-
-        .btn-edit:active {
-            background: rgba(6, 182, 212, 0.25);
-        }
-
-        .btn-delete {
-            background: rgba(239, 68, 68, 0.15);
-            color: #ef4444;
-            border: 1px solid rgba(239, 68, 68, 0.3);
-        }
-
-        .btn-delete:active {
-            background: rgba(239, 68, 68, 0.25);
-        }
-
-        .project-stats {
-            display: flex;
-            gap: 16px;
-            padding-top: 12px;
-            border-top: 1px solid #334155;
-        }
-
-        .project-stat {
-            font-size: 13px;
-            color: #94a3b8;
-        }
-
-        .project-stat strong {
-            color: #06b6d4;
-            font-weight: 700;
-        }
-
-        .empty-state {
-            text-align: center;
-            padding: 60px 20px;
-            color: #64748b;
-        }
-
-        .empty-state-icon {
-            font-size: 48px;
-            margin-bottom: 16px;
-        }
-
-        .empty-state-text {
-            font-size: 16px;
-            margin-bottom: 24px;
-        }
-
-        /* 分析画面 */
-        .analyzer-header {
-            background: #1e293b;
-            border-radius: 12px;
-            padding: 16px 20px;
-            margin-bottom: 20px;
-            border: 1px solid #334155;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .tournament-info h2 {
-            font-size: 18px;
-            font-weight: 700;
-            color: #e2e8f0;
-            margin-bottom: 4px;
-        }
-
-        .tournament-info .date {
-            font-size: 13px;
-            color: #94a3b8;
-        }
-
-        .btn-back {
-            background: #334155;
-            color: #e2e8f0;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 8px;
-            font-size: 14px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.2s;
-        }
-
-        .btn-back:active {
-            background: #475569;
-        }
-
         .control-panel {
             background: #1e293b;
             border-radius: 16px;
@@ -314,6 +122,18 @@
 
         .btn-secondary:active {
             background: #475569;
+        }
+
+        .btn-edit {
+            background: rgba(6, 182, 212, 0.15);
+            color: #06b6d4;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            padding: 8px 16px;
+            font-size: 13px;
+        }
+
+        .btn-edit:active {
+            background: rgba(6, 182, 212, 0.25);
         }
 
         .players-grid {
@@ -546,7 +366,6 @@
             color: #94a3b8;
         }
 
-        /* モーダル */
         .modal {
             display: none;
             position: fixed;
@@ -612,8 +431,6 @@
             margin-bottom: 8px;
         }
 
-        input[type="text"],
-        input[type="date"],
         input[type="number"] {
             width: 100%;
             padding: 12px;
@@ -625,7 +442,7 @@
             font-family: inherit;
         }
 
-        input:focus {
+        input[type="number"]:focus {
             outline: none;
             border-color: #06b6d4;
         }
@@ -664,12 +481,6 @@
             .action-grid {
                 grid-template-columns: 1fr 1fr;
             }
-
-            .analyzer-header {
-                flex-direction: column;
-                gap: 12px;
-                align-items: stretch;
-            }
         }
     </style>
 </head>
@@ -680,94 +491,50 @@
             <div class="subtitle">VPIP/PFR トラッカー</div>
         </header>
 
-        <!-- プロジェクト一覧画面 -->
-        <div id="projectListScreen" class="screen">
-            <div class="project-header">
-                <div class="project-title">トーナメント一覧</div>
-                <button class="btn-create" onclick="openCreateProjectModal()">+ 新規作成</button>
+        <div class="control-panel">
+            <div class="hands-control">
+                <div class="hands-display">
+                    <div class="hands-label">総ハンド数</div>
+                    <div class="hands-value" id="handsDisplay">0</div>
+                </div>
+                <div class="hands-buttons">
+                    <button class="icon-btn" onclick="incrementHands()">+</button>
+                    <button class="icon-btn" onclick="decrementHands()">−</button>
+                </div>
             </div>
-            <div id="projectsList" class="projects-list"></div>
+            <button class="btn-secondary" style="width: 100%; margin-top: 16px;" onclick="resetAll()">全データをリセット</button>
         </div>
 
-        <!-- 分析画面 -->
-        <div id="analyzerScreen" class="screen">
-            <div class="analyzer-header">
-                <div class="tournament-info">
-                    <h2 id="currentTournamentName">トーナメント名</h2>
-                    <div class="date" id="currentTournamentDate">2025/01/01</div>
-                </div>
-                <button class="btn-back" onclick="showProjectList()">← 一覧に戻る</button>
+        <div id="playersContainer" class="players-grid"></div>
+
+        <div class="legend">
+            <div class="legend-header">
+                <h3>プレイヤータイプの分類基準</h3>
+                <button class="btn-edit" onclick="openCriteriaModal()">編集</button>
             </div>
-
-            <div class="control-panel">
-                <div class="hands-control">
-                    <div class="hands-display">
-                        <div class="hands-label">総ハンド数</div>
-                        <div class="hands-value" id="handsDisplay">0</div>
-                    </div>
-                    <div class="hands-buttons">
-                        <button class="icon-btn" onclick="incrementHands()">+</button>
-                        <button class="icon-btn" onclick="decrementHands()">−</button>
-                    </div>
-                </div>
-                <button class="btn-secondary" style="width: 100%; margin-top: 16px;" onclick="resetAll()">全データをリセット</button>
+            <div class="legend-item">
+                <span class="legend-label">タイトアグレッシブ (TAG)</span>
+                <span class="legend-value" id="criteriaTag"></span>
             </div>
-
-            <div id="playersContainer" class="players-grid"></div>
-
-            <div class="legend">
-                <div class="legend-header">
-                    <h3>プレイヤータイプの分類基準</h3>
-                    <button class="btn-edit" onclick="openCriteriaModal()">編集</button>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-label">タイトアグレッシブ (TAG)</span>
-                    <span class="legend-value" id="criteriaTag"></span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-label">タイトパッシブ</span>
-                    <span class="legend-value" id="criteriaTightPassive"></span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-label">ルーズパッシブ</span>
-                    <span class="legend-value" id="criteriaLoosePassive"></span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-label">ルーズアグレッシブ (LAG)</span>
-                    <span class="legend-value" id="criteriaLag"></span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-label">不明</span>
-                    <span class="legend-value"><span id="minHandsDisplay"></span>ハンド未満</span>
-                </div>
+            <div class="legend-item">
+                <span class="legend-label">タイトパッシブ</span>
+                <span class="legend-value" id="criteriaTightPassive"></span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-label">ルーズパッシブ</span>
+                <span class="legend-value" id="criteriaLoosePassive"></span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-label">ルーズアグレッシブ (LAG)</span>
+                <span class="legend-value" id="criteriaLag"></span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-label">不明</span>
+                <span class="legend-value"><span id="minHandsDisplay"></span>ハンド未満</span>
             </div>
         </div>
     </div>
 
-    <!-- プロジェクト作成/編集モーダル -->
-    <div id="projectModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <div class="modal-title" id="projectModalTitle">新規トーナメント作成</div>
-                <button class="modal-close" onclick="closeProjectModal()">×</button>
-            </div>
-            <div class="form-group">
-                <label class="form-label">トーナメント名</label>
-                <input type="text" id="projectName" placeholder="例: 2025/1/1 ポーカー大会">
-            </div>
-            <div class="form-group">
-                <label class="form-label">開催日</label>
-                <input type="date" id="projectDate">
-            </div>
-            <div class="form-group">
-                <label class="form-label">メモ（任意）</label>
-                <textarea id="projectMemo" placeholder="トーナメントの詳細や特記事項..."></textarea>
-            </div>
-            <button class="btn-save" onclick="saveProject()">保存</button>
-        </div>
-    </div>
-
-    <!-- 分類基準編集モーダル -->
     <div id="criteriaModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -791,212 +558,51 @@
     </div>
 
     <script>
-        let projects = [];
-        let currentProjectId = null;
-        let editingProjectId = null;
-
-        const defaultCriteria = {
+        let players = [];
+        let totalHands = 0;
+        let criteria = {
             vpipThreshold: 25,
             pfrThreshold: 15,
             minHands: 10
         };
 
         function loadData() {
-            const savedData = localStorage.getItem('pokerAnalyzerProjects');
+            const savedData = localStorage.getItem('pokerAnalyzer');
             if (savedData) {
-                projects = JSON.parse(savedData);
+                const data = JSON.parse(savedData);
+                totalHands = data.totalHands || 0;
+                criteria = data.criteria || criteria;
+                updateHandsDisplay();
+            }
+
+            const savedPlayers = savedData ? JSON.parse(savedData).players : null;
+            if (savedPlayers && savedPlayers.length === 9) {
+                players = savedPlayers;
+            } else {
+                players = Array.from({ length: 9 }, (_, i) => ({
+                    id: i + 1,
+                    name: `プレイヤー ${i + 1}`,
+                    vpip: 0,
+                    pfr: 0,
+                    memo: ''
+                }));
             }
         }
 
         function saveData() {
-            localStorage.setItem('pokerAnalyzerProjects', JSON.stringify(projects));
+            const data = {
+                players: players,
+                totalHands: totalHands,
+                criteria: criteria
+            };
+            localStorage.setItem('pokerAnalyzer', JSON.stringify(data));
         }
 
-        function getCurrentProject() {
-            return projects.find(p => p.id === currentProjectId);
-        }
-
-        function showProjectList() {
-            currentProjectId = null;
-            document.getElementById('projectListScreen').classList.add('active');
-            document.getElementById('analyzerScreen').classList.remove('active');
-            renderProjectList();
-        }
-
-        function showAnalyzer(projectId) {
-            currentProjectId = projectId;
-            const project = getCurrentProject();
-            if (!project) return;
-
-            document.getElementById('currentTournamentName').textContent = project.name;
-            document.getElementById('currentTournamentDate').textContent = formatDate(project.date);
-
-            document.getElementById('projectListScreen').classList.remove('active');
-            document.getElementById('analyzerScreen').classList.add('active');
-
-            updateCriteriaDisplay();
-            updateHandsDisplay();
-            renderPlayers();
-        }
-
-        function renderProjectList() {
-            const container = document.getElementById('projectsList');
-
-            if (projects.length === 0) {
-                container.innerHTML = `
-                    <div class="empty-state">
-                        <div class="empty-state-icon">🃏</div>
-                        <div class="empty-state-text">トーナメントがまだありません</div>
-                        <button class="btn-create" onclick="openCreateProjectModal()">最初のトーナメントを作成</button>
-                    </div>
-                `;
-                return;
-            }
-
-            // 日付順にソート（新しい順）
-            const sortedProjects = [...projects].sort((a, b) =>
-                new Date(b.createdAt) - new Date(a.createdAt)
-            );
-
-            container.innerHTML = sortedProjects.map(project => `
-                <div class="project-card" onclick="showAnalyzer(${project.id})">
-                    <div class="project-card-header">
-                        <div>
-                            <div class="project-name">${project.name}</div>
-                            <div class="project-date">${formatDate(project.date)}</div>
-                        </div>
-                        <div class="project-actions" onclick="event.stopPropagation()">
-                            <button class="btn-icon btn-edit" onclick="openEditProjectModal(${project.id})">✎</button>
-                            <button class="btn-icon btn-delete" onclick="deleteProject(${project.id})">×</button>
-                        </div>
-                    </div>
-                    ${project.memo ? `<div style="color: #94a3b8; font-size: 13px; margin-bottom: 12px;">${project.memo}</div>` : ''}
-                    <div class="project-stats">
-                        <div class="project-stat">ハンド数: <strong>${project.totalHands}</strong></div>
-                        <div class="project-stat">更新: ${formatDateTime(project.updatedAt || project.createdAt)}</div>
-                    </div>
-                </div>
-            `).join('');
-        }
-
-        function openCreateProjectModal() {
-            editingProjectId = null;
-            document.getElementById('projectModalTitle').textContent = '新規トーナメント作成';
-            document.getElementById('projectName').value = '';
-            document.getElementById('projectDate').value = new Date().toISOString().split('T')[0];
-            document.getElementById('projectMemo').value = '';
-            document.getElementById('projectModal').classList.add('active');
-        }
-
-        function openEditProjectModal(projectId) {
-            editingProjectId = projectId;
-            const project = projects.find(p => p.id === projectId);
-            if (!project) return;
-
-            document.getElementById('projectModalTitle').textContent = 'トーナメント編集';
-            document.getElementById('projectName').value = project.name;
-            document.getElementById('projectDate').value = project.date;
-            document.getElementById('projectMemo').value = project.memo || '';
-            document.getElementById('projectModal').classList.add('active');
-        }
-
-        function closeProjectModal() {
-            document.getElementById('projectModal').classList.remove('active');
-            editingProjectId = null;
-        }
-
-        function saveProject() {
-            const name = document.getElementById('projectName').value.trim();
-            const date = document.getElementById('projectDate').value;
-            const memo = document.getElementById('projectMemo').value.trim();
-
-            if (!name) {
-                alert('トーナメント名を入力してください');
-                return;
-            }
-
-            if (editingProjectId) {
-                // 編集
-                const project = projects.find(p => p.id === editingProjectId);
-                if (project) {
-                    project.name = name;
-                    project.date = date;
-                    project.memo = memo;
-                    project.updatedAt = new Date().toISOString();
-                }
-            } else {
-                // 新規作成
-                const newProject = {
-                    id: Date.now(),
-                    name: name,
-                    date: date,
-                    memo: memo,
-                    totalHands: 0,
-                    players: Array.from({ length: 9 }, (_, i) => ({
-                        id: i + 1,
-                        name: `プレイヤー ${i + 1}`,
-                        vpip: 0,
-                        pfr: 0,
-                        memo: ''
-                    })),
-                    criteria: { ...defaultCriteria },
-                    createdAt: new Date().toISOString(),
-                    updatedAt: new Date().toISOString()
-                };
-                projects.push(newProject);
-                currentProjectId = newProject.id;
-            }
-
-            saveData();
-            closeProjectModal();
-
-            if (editingProjectId) {
-                renderProjectList();
-            } else {
-                showAnalyzer(currentProjectId);
-            }
-        }
-
-        function deleteProject(projectId) {
-            if (confirm('このトーナメントを削除しますか？この操作は取り消せません。')) {
-                projects = projects.filter(p => p.id !== projectId);
-                saveData();
-                renderProjectList();
-            }
-        }
-
-        function formatDate(dateString) {
-            const date = new Date(dateString);
-            return `${date.getFullYear()}/${date.getMonth() + 1}/${date.getDate()}`;
-        }
-
-        function formatDateTime(dateString) {
-            const date = new Date(dateString);
-            const now = new Date();
-            const diffMs = now - date;
-            const diffMins = Math.floor(diffMs / 60000);
-            const diffHours = Math.floor(diffMs / 3600000);
-            const diffDays = Math.floor(diffMs / 86400000);
-
-            if (diffMins < 1) return '今';
-            if (diffMins < 60) return `${diffMins}分前`;
-            if (diffHours < 24) return `${diffHours}時間前`;
-            if (diffDays < 7) return `${diffDays}日前`;
-            return formatDate(dateString);
-        }
-
-        // 分析画面の機能
         function updateHandsDisplay() {
-            const project = getCurrentProject();
-            if (!project) return;
-            document.getElementById('handsDisplay').textContent = project.totalHands;
+            document.getElementById('handsDisplay').textContent = totalHands;
         }
 
         function updateCriteriaDisplay() {
-            const project = getCurrentProject();
-            if (!project) return;
-            const criteria = project.criteria;
-
             document.getElementById('criteriaTag').textContent =
                 `VPIP < ${criteria.vpipThreshold}% · PFR > ${criteria.pfrThreshold}%`;
             document.getElementById('criteriaTightPassive').textContent =
@@ -1009,103 +615,81 @@
         }
 
         function incrementHands() {
-            const project = getCurrentProject();
-            if (!project) return;
-            project.totalHands++;
-            project.updatedAt = new Date().toISOString();
+            totalHands++;
             updateHandsDisplay();
             saveData();
             renderPlayers();
         }
 
         function decrementHands() {
-            const project = getCurrentProject();
-            if (!project || project.totalHands <= 0) return;
-            project.totalHands--;
-            project.updatedAt = new Date().toISOString();
-            updateHandsDisplay();
-            saveData();
-            renderPlayers();
-        }
-
-        function incrementVPIP(playerId) {
-            const project = getCurrentProject();
-            if (!project) return;
-            const player = project.players.find(p => p.id === playerId);
-            if (player) {
-                player.vpip++;
-                project.updatedAt = new Date().toISOString();
+            if (totalHands > 0) {
+                totalHands--;
+                updateHandsDisplay();
                 saveData();
                 renderPlayers();
             }
         }
 
-        function decrementVPIP(playerId) {
-            const project = getCurrentProject();
-            if (!project) return;
-            const player = project.players.find(p => p.id === playerId);
+        function deletePlayer(id) {
+            const player = players.find(p => p.id === id);
+            if (player) {
+                player.vpip = 0;
+                player.pfr = 0;
+                player.memo = '';
+                saveData();
+                renderPlayers();
+            }
+        }
+
+        function incrementVPIP(id) {
+            const player = players.find(p => p.id === id);
+            if (player) {
+                player.vpip++;
+                saveData();
+                renderPlayers();
+            }
+        }
+
+        function decrementVPIP(id) {
+            const player = players.find(p => p.id === id);
             if (player && player.vpip > 0) {
                 player.vpip--;
                 if (player.pfr > player.vpip) {
                     player.pfr = player.vpip;
                 }
-                project.updatedAt = new Date().toISOString();
                 saveData();
                 renderPlayers();
             }
         }
 
-        function incrementPFR(playerId) {
-            const project = getCurrentProject();
-            if (!project) return;
-            const player = project.players.find(p => p.id === playerId);
+        function incrementPFR(id) {
+            const player = players.find(p => p.id === id);
             if (player) {
                 player.pfr++;
                 player.vpip = Math.max(player.vpip, player.pfr);
-                project.updatedAt = new Date().toISOString();
                 saveData();
                 renderPlayers();
             }
         }
 
-        function decrementPFR(playerId) {
-            const project = getCurrentProject();
-            if (!project) return;
-            const player = project.players.find(p => p.id === playerId);
+        function decrementPFR(id) {
+            const player = players.find(p => p.id === id);
             if (player && player.pfr > 0) {
                 player.pfr--;
-                project.updatedAt = new Date().toISOString();
                 saveData();
                 renderPlayers();
             }
         }
 
-        function updateMemo(playerId, memo) {
-            const project = getCurrentProject();
-            if (!project) return;
-            const player = project.players.find(p => p.id === playerId);
+        function updateMemo(id, memo) {
+            const player = players.find(p => p.id === id);
             if (player) {
                 player.memo = memo;
-                project.updatedAt = new Date().toISOString();
                 saveData();
             }
         }
 
-        function deletePlayer(playerId) {
-            const project = getCurrentProject();
-            if (!project) return;
-            const player = project.players.find(p => p.id === playerId);
-            if (player) {
-                player.vpip = 0;
-                player.pfr = 0;
-                player.memo = '';
-                project.updatedAt = new Date().toISOString();
-                saveData();
-                renderPlayers();
-            }
-        }
-
-        function getPlayerType(vpipPercent, pfrPercent, criteria, totalHands) {
+        function getPlayerType(vpipPercent, pfrPercent) {
             if (totalHands < criteria.minHands) {
                 return { type: '不明', class: 'tag-unknown' };
             }
@@ -1123,16 +707,13 @@
         }
 
         function renderPlayers() {
-            const project = getCurrentProject();
-            if (!project) return;
-
             const container = document.getElementById('playersContainer');
             container.innerHTML = '';
 
-            project.players.forEach((player) => {
-                const vpipPercent = project.totalHands > 0 ? Math.round((player.vpip / project.totalHands) * 100) : 0;
-                const pfrPercent = project.totalHands > 0 ? Math.round((player.pfr / project.totalHands) * 100) : 0;
-                const playerTypeInfo = getPlayerType(vpipPercent, pfrPercent, project.criteria, project.totalHands);
+            players.forEach((player) => {
+                const vpipPercent = totalHands > 0 ? Math.round((player.vpip / totalHands) * 100) : 0;
+                const pfrPercent = totalHands > 0 ? Math.round((player.pfr / totalHands) * 100) : 0;
+                const playerTypeInfo = getPlayerType(vpipPercent, pfrPercent);
 
                 const card = document.createElement('div');
                 card.className = 'player-card';
@@ -1145,12 +726,12 @@
                         <div class="stat-card">
                             <div class="stat-label">VPIP</div>
                             <div class="stat-value">${vpipPercent}%</div>
-                            <div class="stat-detail">${player.vpip}/${project.totalHands}</div>
+                            <div class="stat-detail">${player.vpip}/${totalHands}</div>
                         </div>
                         <div class="stat-card">
                             <div class="stat-label">PFR</div>
                             <div class="stat-value">${pfrPercent}%</div>
-                            <div class="stat-detail">${player.pfr}/${project.totalHands}</div>
+                            <div class="stat-detail">${player.pfr}/${totalHands}</div>
                         </div>
                     </div>
                     <div class="action-grid">
@@ -1182,11 +763,9 @@
         }
 
         function openCriteriaModal() {
-            const project = getCurrentProject();
-            if (!project) return;
-            document.getElementById('vpipThreshold').value = project.criteria.vpipThreshold;
-            document.getElementById('pfrThreshold').value = project.criteria.pfrThreshold;
-            document.getElementById('minHands').value = project.criteria.minHands;
+            document.getElementById('vpipThreshold').value = criteria.vpipThreshold;
+            document.getElementById('pfrThreshold').value = criteria.pfrThreshold;
+            document.getElementById('minHands').value = criteria.minHands;
             document.getElementById('criteriaModal').classList.add('active');
         }
 
@@ -1195,12 +774,9 @@
         }
 
         function saveCriteria() {
-            const project = getCurrentProject();
-            if (!project) return;
-            project.criteria.vpipThreshold = parseInt(document.getElementById('vpipThreshold').value);
-            project.criteria.pfrThreshold = parseInt(document.getElementById('pfrThreshold').value);
-            project.criteria.minHands = parseInt(document.getElementById('minHands').value);
-            project.updatedAt = new Date().toISOString();
+            criteria.vpipThreshold = parseInt(document.getElementById('vpipThreshold').value);
+            criteria.pfrThreshold = parseInt(document.getElementById('pfrThreshold').value);
+            criteria.minHands = parseInt(document.getElementById('minHands').value);
             saveData();
             updateCriteriaDisplay();
             renderPlayers();
@@ -1209,24 +785,21 @@
 
         function resetAll() {
             if (confirm('全てのデータをリセットしますか？この操作は取り消せません。')) {
-                const project = getCurrentProject();
-                if (!project) return;
-                project.totalHands = 0;
-                project.players.forEach(player => {
+                totalHands = 0;
+                players.forEach(player => {
                     player.vpip = 0;
                     player.pfr = 0;
                     player.memo = '';
                 });
-                project.updatedAt = new Date().toISOString();
                 updateHandsDisplay();
                 saveData();
                 renderPlayers();
             }
         }
 
-        // 初期化
         loadData();
-        showProjectList();
+        updateCriteriaDisplay();
+        renderPlayers();
     </script>
 </body>
 </html>
