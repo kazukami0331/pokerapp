@@ -753,19 +753,19 @@
                             <div class="stat-value">${vpipPercent}%</div>
                             <div class="stat-detail">${player.vpip}/${totalHands}</div>
                         </div>
-                        <button class="action-btn btn-vpip-plus" onclick="incrementVPIP(${player.id})">
-                            <span>+</span>
-                            <span style="font-size: 9px;">VPIP</span>
-                        </button>
+                        <div style="display: flex; flex-direction: column; gap: 3px;">
+                            <button class="action-btn btn-vpip-plus" onclick="incrementVPIP(${player.id})" style="padding: 4px;">+</button>
+                            <button class="action-btn btn-vpip-minus" onclick="decrementVPIP(${player.id})" style="padding: 4px;">−</button>
+                        </div>
                         <div class="stat-card">
                             <div class="stat-label">PFR</div>
                             <div class="stat-value">${pfrPercent}%</div>
                             <div class="stat-detail">${player.pfr}/${totalHands}</div>
                         </div>
-                        <button class="action-btn btn-pfr-plus" onclick="incrementPFR(${player.id})">
-                            <span>+</span>
-                            <span style="font-size: 9px;">PFR</span>
-                        </button>
+                        <div style="display: flex; flex-direction: column; gap: 3px;">
+                            <button class="action-btn btn-pfr-plus" onclick="incrementPFR(${player.id})" style="padding: 4px;">+</button>
+                            <button class="action-btn btn-pfr-minus" onclick="decrementPFR(${player.id})" style="padding: 4px;">−</button>
+                        </div>
                     </div>
                     <button class="memo-toggle" onclick="toggleMemo(${player.id})">
                         <span id="memo-icon-${player.id}">▼</span> メモ・リセット
